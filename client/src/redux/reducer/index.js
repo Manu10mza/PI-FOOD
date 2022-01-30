@@ -3,6 +3,8 @@ import {
   FILTER_BY_DIET,
   FILTER_CREATED,
   ORDER_BY_TITLE,
+  ORDER_BY_POINTS,
+  GET_RECIPES_NAME,
 } from "../actions";
 
 const initialState = {
@@ -17,6 +19,11 @@ const rootReducer = (state = initialState, action) => {
         ...state,
         recipes: action.payload,
         allRecipes: action.payload,
+      };
+    case GET_RECIPES_NAME:
+      return {
+        ...state,
+        recipes: action.payload,
       };
     case FILTER_BY_DIET:
       const allRecipes = state.allRecipes;
@@ -63,7 +70,32 @@ const rootReducer = (state = initialState, action) => {
             });
       return {
         ...state,
-        recipes: sortedArr,
+        recipes: action.payload === "All" ? state.allRecipes : sortedArr,
+      };
+    case ORDER_BY_POINTS:
+      let sortedArr1 =
+        action.payload === "low"
+          ? state.recipes.sort((a, b) => {
+              if (a.score > b.score) {
+                return 1;
+              }
+              if (b.score > a.score) {
+                return -1;
+              }
+              return 0;
+            })
+          : state.recipes.sort((a, b) => {
+              if (a.score > b.score) {
+                return -1;
+              }
+              if (b.score > a.score) {
+                return 1;
+              }
+              return 0;
+            });
+      return {
+        ...state,
+        recipes: action.payload === "All" ? state.allRecipes : sortedArr1,
       };
     default:
       return state;

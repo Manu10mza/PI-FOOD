@@ -6,10 +6,12 @@ import {
   filterRecipesByDiet,
   filterCreated,
   orderByTitle,
+  orderByPoints,
 } from "../redux/actions";
 import { Link } from "react-router-dom";
 import Card from "./Card";
 import Paginado from "./Paginado";
+import SearchBar from "./SearchBar";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -52,6 +54,12 @@ export default function Home() {
     setOrder(`Ordered ${e.target.value}`); //para q se modifique el state y se renderice
   }
 
+  function handleScore(e) {
+    dispatch(orderByPoints(e.target.value));
+    setCurrentPage(1);
+    setOrder(`Ordered ${e.target.value}`); //para q se modifique el state y se renderice
+  }
+
   return (
     <div>
       <Link to="/recipe">Create a recipe</Link>
@@ -59,9 +67,14 @@ export default function Home() {
       <button onClick={handleClick}>All recipes</button>
       <div>
         <select onChange={(e) => handleSort(e)}>
-          <option value="noOrder">No order</option>
+          <option value="All">----</option>
           <option value="asc">A-Z</option>
           <option value="desc">Z-A</option>
+        </select>
+        <select onChange={(e) => handleScore(e)}>
+          <option value="All">----</option>
+          <option value="high">High Score</option>
+          <option value="low">Low Score</option>
         </select>
         <select onChange={(e) => handleFilterDiet(e)}>
           <option value="All"> All diets</option>
@@ -86,6 +99,7 @@ export default function Home() {
           allRecipes={allRecipes.length}
           paginado={paginado}
         />
+        <SearchBar />
         {currentRecipes?.map((e) => {
           return (
             <div className="card">
