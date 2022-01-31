@@ -1,10 +1,12 @@
 import axios from "axios";
 export const GET_RECIPES = "GET_RECIPES";
+export const GET_RECIPES_NAME = "GET_RECIPES_NAME";
 export const FILTER_BY_DIET = "FILTER_BY_DIET";
 export const FILTER_CREATED = "FILTER_CREATED";
 export const ORDER_BY_TITLE = "ORDER_BY_TITLE";
 export const ORDER_BY_POINTS = "ORDER_BY_POINTS";
-export const GET_RECIPES_NAME = "GET_RECIPES_NAME";
+export const GET_TYPES = "GET_TYPES";
+export const GET_DETAILS = "GET_DETAILS";
 
 export function getRecipes() {
   return async function (dispatch) {
@@ -24,6 +26,30 @@ export function getNameRecipe(payload) {
       );
       return dispatch({
         type: GET_RECIPES_NAME,
+        payload: json.data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+}
+
+export function getTypes() {
+  return async function (dispatch) {
+    var json = await axios.get("http://localhost:3001/types");
+    return dispatch({
+      type: GET_TYPES,
+      payload: json.data,
+    });
+  };
+}
+
+export function getDetails(id) {
+  return async function (dispatch) {
+    try {
+      var json = await axios.get("http://localhost:3001/recipes/" + id);
+      return dispatch({
+        type: GET_DETAILS,
         payload: json.data,
       });
     } catch (error) {

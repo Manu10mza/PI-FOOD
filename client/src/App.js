@@ -2,6 +2,8 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage.jsx";
 import Home from "./components/Home";
+import RecipeCreate from "./components/RecipeCreate.jsx";
+import Detail from "./components/Detail.jsx";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
         <Route exact path="/home" element={<Home />} />
+        <Route path="/recipe" element={<RecipeCreate />} />
+        <Route path="home/:id" element={<Detail />} />
       </Routes>
     </div>
   );

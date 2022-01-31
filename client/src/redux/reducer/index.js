@@ -5,11 +5,15 @@ import {
   ORDER_BY_TITLE,
   ORDER_BY_POINTS,
   GET_RECIPES_NAME,
+  GET_TYPES,
+  GET_DETAILS,
 } from "../actions";
 
 const initialState = {
   recipes: [],
   allRecipes: [],
+  types: [],
+  details: [],
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -24,6 +28,18 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         recipes: action.payload,
+      };
+
+    case GET_TYPES:
+      return {
+        ...state,
+        types: action.payload,
+      };
+
+    case GET_DETAILS:
+      return {
+        ...state,
+        details: action.payload,
       };
     case FILTER_BY_DIET:
       const allRecipes = state.allRecipes;

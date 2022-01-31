@@ -13,6 +13,9 @@ import Card from "./Card";
 import Paginado from "./Paginado";
 import SearchBar from "./SearchBar";
 
+var img_default = document.createElement("img");
+img_default.source = "./default_image.jpg";
+
 export default function Home() {
   const dispatch = useDispatch();
   const allRecipes = useSelector((state) => state.recipes);
@@ -104,7 +107,12 @@ export default function Home() {
           return (
             <div className="card">
               <Link to={"/home/" + e.id}>
-                <Card title={e.title} image={e.image} diet={e.diet} />;
+                <Card
+                  title={e.title}
+                  image={e.image ? e.image : img_default}
+                  diet={e.diet}
+                />
+                ;
               </Link>
             </div>
           );
