@@ -110,7 +110,7 @@ export default function Home() {
                 <Card
                   title={e.title}
                   image={e.image ? e.image : img_default}
-                  diet={e.diet}
+                  diets={e.diets}
                 />
                 ;
               </Link>

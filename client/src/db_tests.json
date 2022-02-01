@@ -1,0 +1,25 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Fideos con tuco",
+      "summary": "Ideal para un domingo",
+      "score": 90,
+      "health": 55,
+      "steps": "Dorar la carne cortada en una olla grande con aceite. Una vez que haya dorado, retirar de la olla y agregar las cebollas y el ajo picados. Rehogar revolviendo con una cuchara preferiblemente de madera y agregar las hojas del laurel y el orégano.Agregar el extracto y puré de tomate, el caldo y los condimentos. Poner a hervir la preparación y dejar a fuego bajo. Agregar la carne a la salsa ya hirviendo.De ser necesario agregar un poco de agua a la preparación, sin embargo el tuco debe ser espeso.Mientras el tuco se cocina, poner a hervir una cacerola con agua y sal para cocinar la pasta de modo tradicional. Cuélala cuando esté lista y sírvela en un plato hondo con el tuco recién preparado encima.Si gustas puedes agregar queso rallado.",
+      "image": "https://i1.wp.com/lasrecetasdelabuelapaca.com/wp-content/uploads/2016/03/tuco-o-salsa-bolo%C3%B1esa-blog333.jpg?resize=820%2C615&ssl=1",
+      "diets": ["paleolithic", "vegan"]
+    },
+
+    {
+      "id": 2,
+      "title": "Milanesas a caballo",
+      "summary": "Nutritivo y rico",
+      "score": 100,
+      "health": 70,
+      "steps": "Freir las milanesas, mientras tanto freir un huevo. Una vez listos presentar la milanesa en el plata poniendole encima el huevo",
+      "image": "https://locosxlaparrilla.com/wp-content/uploads/2015/02/Receta-Recetas-locosxlaparrilla-milanesamilanesasmilanesa-a-caballo-848x477.jpg",
+      "diets": ["paleolithic", "lacto ovo vegetarian"]
+    }
+  ]
+}
