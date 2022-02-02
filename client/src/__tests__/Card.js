@@ -4,7 +4,7 @@ import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import isReact from "is-react";
 
 import * as recipes from "../db_tests.json";
-import Card from "../components/Card.jsx";
+import Card from "../components/Card/Card.jsx";
 //console.log(recipes.recipes);
 configure({ adapter: new Adapter() });
 

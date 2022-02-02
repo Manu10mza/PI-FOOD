@@ -1,0 +1,48 @@
+/* .div {
+  background: url("https://thumbs.dreamstime.com/z/healthy-food-background-fruits-vegetables-cereal-nuts-superfood-dietary-balanced-vegetarian-eating-products-kitchen-143677456.jpg");
+} */
+
+.principal {
+  background-image: url("https://thumbs.dreamstime.com/z/healthy-food-background-fruits-vegetables-cereal-nuts-superfood-dietary-balanced-vegetarian-eating-products-kitchen-143677456.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.title {
+  color: rgb(0, 0, 0);
+  margin-top: 125px;
+  text-align-last: left;
+  margin-left: 40px;
+  position: absolute;
+}
+.title h1 {
+  font-family: "Zen Antique", serif;
+  font-size: 75px;
+}
+
+.btn {
+  font-family: "Zen Antique", serif;
+  font-style: italic;
+  display: inline-block;
+  color: white;
+  border: 1px solid #ccc;
+  background: black;
+  box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  vertical-align: middle;
+  /* max-width: 200px; */
+  padding: 18px 85px;
+  text-align: center;
+  font-size: 45px;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(43, 43, 43);
+
+  /* -webkit-transition: all 0.5s ease-in-out; */
+  transition: all 0.5s ease-in-out;
+}

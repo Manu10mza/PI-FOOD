@@ -1,0 +1,161 @@
+.background {
+  background-image: url("https://images-prod.healthline.com/hlcmsresource/images/topic_centers/Food-Nutrition/1326-meals_food_collage-1296x728-header.jpg");
+  /* filter: blur(5px);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat-y;
+  position: absolute; */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  height: 100vh;
+  width: 100%;
+}
+
+.all {
+  background-position: top;
+  position: absolute;
+  top: 50px;
+  left: 300px;
+}
+
+.btn {
+  color: rgb(133, 133, 133);
+  font-family: "Zen Antique", serif;
+  font-size: 25px;
+  font-style: italic;
+  /* display: inline-block; */
+  color: white;
+  border: 1px solid #ccc;
+  background: rgb(161, 161, 161);
+  box-shadow: 0 0 5px -1px rgba(153, 153, 153, 0.2);
+  cursor: pointer;
+  /* vertical-align: center; */
+  padding: 5px 25px;
+  text-align: center;
+  /* margin: 10px; */
+  margin-top: 20px;
+  margin-left: 1375px;
+}
+
+.btn:hover {
+  color: black;
+  background-color: whitesmoke;
+
+  /* -webkit-transition: all 0.5s ease-in-out; */
+  transition: all 0.5s ease-in-out;
+}
+
+.title {
+  color: rgb(0, 0, 0);
+  margin-top: -45px;
+  text-align-last: left;
+  margin-left: -250px;
+  position: absolute;
+  font-family: "Zen Antique", serif;
+  font-style: italic;
+  font-size: 50px;
+}
+
+.form {
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 170px;
+  padding: 20px;
+  border: 2px solid;
+  background-color: rgb(211, 210, 210);
+}
+
+.input {
+  /* vertical-align:; */
+
+  width: 730px;
+  padding: 7px;
+  margin: 5px;
+  display: inline-block;
+  font-family: "Zen Antique", serif;
+  /* font-style: italic; */
+  font-size: 19px;
+  border-radius: 4px;
+  background-color: rgb(240, 238, 238);
+}
+
+.label {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  font-family: "Zen Antique", serif;
+  font-size: 18px;
+}
+
+.diet {
+  /* display: inline-block;
+  width: 2px; */
+  text-align: left;
+  font-family: "Zen Antique", serif;
+  font-size: 18px;
+}
+
+.btn1 {
+  color: rgb(133, 133, 133);
+  font-family: "Zen Antique", serif;
+  font-size: 25px;
+  font-style: italic;
+  /* display: inline-block; */
+  color: white;
+  border: 1px solid #ccc;
+  background: rgb(161, 161, 161);
+  box-shadow: 0 0 5px -1px rgba(153, 153, 153, 0.2);
+  cursor: pointer;
+  vertical-align: center;
+  padding: 5px 25px;
+  text-align: center;
+  margin: 10px;
+}
+.btn1:hover {
+  color: black;
+  background-color: whitesmoke;
+
+  /* -webkit-transition: all 0.5s ease-in-out; */
+  transition: all 0.5s ease-in-out;
+}
+
+.diet_text {
+  font-family: "Zen Antique", serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.divDiet {
+  padding-top: 15px;
+}
+
+.registro {
+  display: inline-block;
+  /* width: 600px;
+  height: 100px; */
+  position: relative;
+  /* float: left; */
+  top: 650px;
+  left: -170px;
+  /* border: 1px solid black; */
+}
+
+.etiqueta {
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.delete {
+  display: inline-block;
+  /* padding-left: 10px; */
+}

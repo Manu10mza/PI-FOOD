@@ -1,0 +1,45 @@
+.btn {
+  /* color: rgb(133, 133, 133); */
+  font-family: "Zen Antique", serif;
+  font-size: 25px;
+  font-style: italic;
+  /* display: inline-block; */
+  color: white;
+  border: 1px solid #ccc;
+  background: rgb(161, 161, 161);
+  /* box-shadow: 0 0 5px -1px rgba(153, 153, 153, 0.2); */
+  cursor: pointer;
+  /* vertical-align: center; */
+  /* padding: 5px 25px; */
+  /* text-align: center; */
+  /* margin: 10px; */
+  display: inline-block;
+}
+.btn:hover {
+  color: black;
+  background-color: whitesmoke;
+
+  /* -webkit-transition: all 0.5s ease-in-out; */
+  transition: all 0.5s ease-in-out;
+}
+
+.search {
+  color: rgb(219, 219, 219);
+  font-family: "Zen Antique", serif;
+  font-size: 25px;
+  font-style: italic;
+  /* display: inline-block; */
+  color: rgb(82, 82, 82);
+  border: 1px solid #ccc;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 5px -1px rgba(153, 153, 153, 0.2);
+  cursor: pointer;
+  vertical-align: center;
+  padding: 3px 3px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.searchbar {
+  padding-bottom: 20px;
+}

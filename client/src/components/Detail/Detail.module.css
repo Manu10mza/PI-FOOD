@@ -1,0 +1,118 @@
+.principal {
+  background-image: url("https://images-prod.healthline.com/hlcmsresource/images/topic_centers/Food-Nutrition/1326-meals_food_collage-1296x728-header.jpg");
+  /* height: 110vh; */
+  background-size: contain;
+  /* height: 100px; */
+  /* width: 100px; */
+  /* background-size: cover; */
+  background-position: center top;
+  /* min-height: 10px; */
+  background-repeat: repeat-y;
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  height: 150vh;
+  width: 100%;
+}
+
+.all {
+  margin-top: -1350px;
+  position: relative;
+  left: 600px;
+}
+
+.polaroid {
+  width: 35%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img {
+  width: 100%;
+}
+
+.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.title {
+  font-family: "Zen Antique", serif;
+  font-size: 25px;
+  text-decoration: none;
+  /* font-style: italic; */
+}
+
+.diets {
+  font-family: "Zen Antique", serif;
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.details {
+  background-color: white;
+  border: 2px solid grey;
+  width: 1300px;
+  position: relative;
+  left: 300px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.btn {
+  color: rgb(133, 133, 133);
+  font-family: "Zen Antique", serif;
+  font-size: 25px;
+  font-style: italic;
+  /* display: inline-block; */
+  color: white;
+  border: 1px solid #ccc;
+  background: rgb(161, 161, 161);
+  box-shadow: 0 0 5px -1px rgba(153, 153, 153, 0.2);
+  cursor: pointer;
+  /* vertical-align: center; */
+  padding: 5px 25px;
+  text-align: center;
+  /* margin: 10px; */
+  position: relative;
+  /* margin-top: 20px;*/
+  left: 700px;
+  top: -1175px;
+}
+
+.btn:hover {
+  color: black;
+  background-color: whitesmoke;
+
+  /* -webkit-transition: all 0.5s ease-in-out; */
+  transition: all 0.5s ease-in-out;
+}
+
+.summary {
+  border-bottom: 2px solid grey;
+  padding: 5px;
+  padding-bottom: 10px;
+  font-family: "Zen Antique", serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.score {
+  border-bottom: 2px solid grey;
+  padding: 5px;
+  font-family: "Zen Antique", serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.steps {
+  /* border-bottom: 2px solid grey; */
+  padding: 5px;
+  padding-bottom: 10px;
+  font-family: "Zen Antique", serif;
+  font-size: 18px;
+  font-style: italic;
+}

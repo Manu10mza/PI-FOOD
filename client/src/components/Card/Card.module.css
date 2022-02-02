@@ -1,0 +1,40 @@
+.title {
+  font-family: "Zen Antique", serif;
+  font-size: 18px;
+  text-decoration: none;
+  /* font-style: italic; */
+}
+
+.diets {
+  font-family: "Zen Antique", serif;
+  font-size: 14px;
+  font-style: italic;
+  text-decoration: none;
+}
+
+/* .img {
+  width: 400px;
+  height: 450px;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  
+} */
+.all {
+  position: relative;
+  left: 50px;
+}
+.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img {
+  width: 100%;
+}
+
+.container {
+  text-align: center;
+  padding: 10px 20px;
+}

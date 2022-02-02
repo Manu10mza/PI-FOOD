@@ -1,0 +1,42 @@
+/* .paginado {
+  font-family: "Zen Antique", serif;
+  font-size: 15px;
+  font-style: italic;
+} */
+
+.li {
+  display: inline;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.btn {
+  /* font-family: "Zen Antique", serif;
+  font-size: 15px;
+  font-style: italic;
+  display: inline;
+  padding-left: 3px;
+  padding-right: 3px; */
+
+  color: rgb(219, 219, 219);
+  font-family: "Zen Antique", serif;
+  font-size: 25px;
+  font-style: italic;
+  display: inline-block;
+  color: rgb(82, 82, 82);
+  border: 1px solid #ccc;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 5px -1px rgba(153, 153, 153, 0.2);
+  cursor: pointer;
+  vertical-align: center;
+  /* padding: 3px 3px; */
+  text-align: center;
+  margin-left: 5px;
+}
+.btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(43, 43, 43);
+
+  /* -webkit-transition: all 0.5s ease-in-out; */
+  transition: all 0.5s ease-in-out;
+}

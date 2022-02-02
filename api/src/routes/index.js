@@ -1,11 +1,11 @@
 const { Router } = require("express");
 const { Recipe, Diet } = require("../db");
-const { API_KEY } = process.env;
-const { conn } = require("../db");
+const { API_KEY, API_KEY2, API_KEY3, API_KEY4 } = process.env;
+//const { conn } = require("../db");
 // Importar todos los routers;
 // Ejemplo: const authRouter = require('./auth.js');
 const axios = require("axios");
-
+const API_now = API_KEY2;
 const router = Router();
 
 // Configurar los routers
@@ -17,7 +17,7 @@ const router = Router();
 const getApiInfo = async () => {
   try {
     const apiUrl = await axios.get(
-      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&&addRecipeInformation=true`
+      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_now}&&addRecipeInformation=true&&number=100`
     );
     //console.log(apiUrl);
     // } catch (error) {
@@ -122,49 +122,33 @@ router.get("/recipes/:id", async (req, res) => {
 // Obtener todos los tipos de dieta posibles
 // En una primera instancia, cuando no exista ninguno, deberán precargar la base de datos con los tipos de datos indicados por spoonacular acá
 
-// const diets = [
-//   "Gluten Free",
-//   "Ketogenic",
-//   "Vegetarian",
-//   "Lacto-Vegetarian",
-//   "Ovo-Vegetarian",
-//   "Vegan",
-//   "Pescetarian",
-//   "Paleo",
-//   "Primal",
-//   "Low FODMAP",
-//   "Whole30",
-// ];
-
-// async function preload() {
-//   const mapDiets = diets.forEach(async (element) => {
-//     await Diet.findOrCreate({
-//       where: { title: element },
-//     });
-//   });
-
-//   const allDiets = await Diet.findAll();
-//   return allDiets;
-// }
-
-// router.get("/types", async (req, res, next) => {
-//   try {
-//     const types = await preload();
-//     res.status(200).send(types);
-//   } catch (error) {
-//     error.next;
-//   }
-// });
-
 router.get("/types", async (req, res) => {
   const apiUrl = await axios.get(
-    `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&&addRecipeInformation=true`
+    `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_now}&&addRecipeInformation=true&&number=100`
   );
   const apiDiets = apiUrl.data.results.map((e) => e.diets);
+  const apiDiets1 = [
+    "gluten free",
+    "dairy free",
+    "lacto ovo vegetarian",
+    "vegan",
+    "paleolithic",
+    "primal",
+    "pescatarian",
+    "foodmap friendly",
+    "whole 30",
+  ];
+
   //console.log(apiDiets);
   const dietEach = apiDiets.flat(1);
+  //1er filtro solo valores unicos
+  function onlyUnique(value, index, self) {
+    return self.indexOf(value) === index;
+  }
+  // Filter:
+  var unique = dietEach.filter(onlyUnique);
   //console.log(dietEach);
-  dietEach.forEach((e) => {
+  unique.forEach((e) => {
     Diet.findOrCreate({
       where: { title: e },
     });
@@ -188,7 +172,7 @@ router.post("/recipe", async (req, res) => {
     health,
     steps,
     image,
-    diets,
+    //diets,
     createdInDb,
   });
   let dietDb = await Diet.findAll({

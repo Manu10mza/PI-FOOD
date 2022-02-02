@@ -1,0 +1,100 @@
+.principal {
+  background-image: url("https://images-prod.healthline.com/hlcmsresource/images/topic_centers/Food-Nutrition/1326-meals_food_collage-1296x728-header.jpg");
+  /* height: 110vh; */
+  background-size: contain;
+  /* height: 100px; */
+  /* width: 100px; */
+  /* background-size: cover; */
+  background-position: center top;
+  /* min-height: 10px; */
+  background-repeat: repeat-y;
+}
+
+.create {
+  color: rgb(133, 133, 133);
+  margin-top: 30px;
+  text-align-last: left;
+  margin-left: 950px;
+  position: absolute;
+  font-family: "Zen Antique", serif;
+  font-size: 25px;
+  font-style: italic;
+  display: inline-block;
+  color: white;
+  border: 1px solid #ccc;
+  background: rgb(161, 161, 161);
+  box-shadow: 0 0 5px -1px rgba(153, 153, 153, 0.2);
+  cursor: pointer;
+  vertical-align: center;
+  padding: 6px 50px;
+  text-align: center;
+}
+
+.create:hover {
+  color: black;
+  background-color: whitesmoke;
+
+  /* -webkit-transition: all 0.5s ease-in-out; */
+  transition: all 0.5s ease-in-out;
+}
+
+.title {
+  color: rgb(0, 0, 0);
+  margin-top: 60px;
+  text-align-last: left;
+  margin-left: 20px;
+  position: absolute;
+  font-family: "Zen Antique", serif;
+  font-style: italic;
+  font-size: 50px;
+}
+
+.all {
+  margin-top: 100px;
+  display: inline-block;
+}
+
+.btn {
+  color: rgb(133, 133, 133);
+  font-family: "Zen Antique", serif;
+  font-size: 25px;
+  font-style: italic;
+  /* display: inline-block; */
+  color: white;
+  border: 1px solid #ccc;
+  background: rgb(161, 161, 161);
+  box-shadow: 0 0 5px -1px rgba(153, 153, 153, 0.2);
+  cursor: pointer;
+  vertical-align: center;
+  padding: 5px 25px;
+  text-align: center;
+  margin: 10px;
+}
+.btn:hover {
+  color: black;
+  background-color: whitesmoke;
+
+  /* -webkit-transition: all 0.5s ease-in-out; */
+  transition: all 0.5s ease-in-out;
+}
+
+.desplegables select {
+  color: rgb(219, 219, 219);
+  font-family: "Zen Antique", serif;
+  font-size: 25px;
+  font-style: italic;
+  /* display: inline-block; */
+  color: rgb(82, 82, 82);
+  border: 1px solid #ccc;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 5px -1px rgba(153, 153, 153, 0.2);
+  cursor: pointer;
+  vertical-align: center;
+  padding: 3px 3px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.linkCard {
+  text-decoration: none;
+}
