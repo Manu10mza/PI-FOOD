@@ -5,7 +5,7 @@ const { API_KEY, API_KEY2, API_KEY3, API_KEY4 } = process.env;
 // Importar todos los routers;
 // Ejemplo: const authRouter = require('./auth.js');
 const axios = require("axios");
-const API_now = API_KEY2;
+const API_now = API_KEY;
 const router = Router();
 
 // Configurar los routers
